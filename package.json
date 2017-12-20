@@ -29,6 +29,7 @@
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-react": "^6.1.18",
     "babel-preset-stage-1": "^6.1.18",
+    "cors": "^2.8.4",
     "express": "^4.16.2",
     "lodash": "^3.10.1",
     "path": "^0.12.7",
