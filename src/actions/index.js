@@ -10,8 +10,14 @@ export const GET_RECIPE = "GET_RECIPE";
 
 export function fetchRecipes(searchTerm) {
     const url = `${SEARCH_URL}&q=${searchTerm}`;
-    const request = axios.get(url);
-    
+    const request = axios.get(url, 
+                    {
+                        mode: "cors",
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                        }
+                    });
     return {
         type: FETCH_RECIPES,
         payload: request
